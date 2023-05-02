@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/cf845565b5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="menu">
+            <div class="logo">
+                Foo<span>dies.</span>
+            </div>
+            <ul>
+                <li class="active"><i class="fa-solid fa-house-user"></i> Home</li>
+                <li><i class="fa-regular fa-user"></i> User</li>
+                <li><i class="fa-solid fa-heart"></i> Favorite</li>
+            </ul>
+            <ul>
+                <li><i class="fa-brands fa-youtube"></i> Youtube</li>
+                <li><i class="fa-brands fa-square-facebook"></i> Facebook</li>
+                <li><i class="fa-brands fa-instagram"></i> Instagram</li>
+                <li><i class="fa-brands fa-linkedin"></i> Linked In</li>
+            </ul>
+        </div>
+
+        <div class="center">
+            <div class="search">
+                <div class="form">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search...">
+                    <button>Search</button>
+                </div>
+            </div>
+
+            <h1>PRODUCTS</h1>
+            <div class="list">
+                <!-- RENDER PRODUCTS HERE ! -->
+                <!-- <div class="item" data-key="1">
+                    <div class="img">
+                        <img src="https://i.pinimg.com/564x/e6/e1/1b/e6e11be3f09b73e4ea66e73e3988d5b5.jpg" alt="Lemonade">
+                    </div>
+                    <div class="content">
+                        <div class="title">Lemonade</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sit dolores at reiciendis quo quam!</div>
+                        <div class="price">Rs 25</div>
+                        <button class="add">Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="2">
+                    <div class="img">
+                        <img src="https://i.pinimg.com/564x/1d/07/e4/1d07e4ddbe0df2aad60acf1334a33de6.jpg" alt="Mellon Juice">
+                    </div>
+                    <div class="content">
+                        <div class="title">Mellon Juice</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sit dolores at reiciendis quo quam!</div>
+                        <div class="price">Rs 30</div>
+                        <button class="add">Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="3">
+                    <div class="img">
+                        <img src="https://i.pinimg.com/564x/a6/83/47/a68347315e1e13399234c1957982237f.jpg" alt="Orange Juice">
+                    </div>
+                    <div class="content">
+                        <div class="title">Orange Juice</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sit dolores at reiciendis quo quam!</div>
+                        <div class="price">Rs 30</div>
+                        <button class="add">Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="4">
+                    <div class="img">
+                        <img src="https://i.pinimg.com/564x/93/db/ad/93dbadc7365d9a74c7b29ebf02d63c9c.jpg" alt="Tropical Smoothie">
+                    </div>
+                    <div class="content">
+                        <div class="title">Tropical Smoothie</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sit dolores at reiciendis quo quam!</div>
+                        <div class="price">Rs 150</div>
+                        <button class="add">Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="5">
+                    <div class="img">
+                        <img src="https://i.pinimg.com/564x/62/4e/94/624e94d6b545eb1b99bfe7fd4751bdba.jpg" alt="Blue Lagoon">
+                    </div>
+                    <div class="content">
+                        <div class="title">Blue Lagoon</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sit dolores at reiciendis quo quam!</div>
+                        <div class="price">Rs 250</div>
+                        <button class="add">Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="6">
+                    <div class="img">
+                        <img src="https://i.pinimg.com/564x/0e/e5/3d/0ee53de66d56b6eebcf46cf1112cca5e.jpg" alt="Fruit Beer">
+                    </div>
+                    <div class="content">
+                        <div class="title">Fruit Beer</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sit dolores at reiciendis quo quam!</div>
+                        <div class="price">Rs 250</div>
+                        <button class="add">Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="7">
+                    <div class="img">
+                        <img src="https://i.pinimg.com/564x/45/dc/77/45dc7713ae9afbc952729fa2a0421dfc.jpg" alt="Galaxy Lemonade">
+                    </div>
+                    <div class="content">
+                        <div class="title">Galaxy Lemonade</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sit dolores at reiciendis quo quam!</div>
+                        <div class="price">Rs 350</div>
+                        <button class="add">Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="8">
+                    <div class="img">
+                        <img src="https://i.pinimg.com/564x/be/c2/d2/bec2d25fb5b507a64d9e953bf203cf38.jpg" alt="Butterfly Tea">
+                    </div>
+                    <div class="content">
+                        <div class="title">Butterfly Tea</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sit dolores at reiciendis quo quam!</div>
+                        <div class="price">Rs 350</div>
+                        <button class="add">Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="9">
+                    <div class="img">
+                        <img src="https://i.pinimg.com/564x/2a/8e/04/2a8e04419f2ad9b16e769ebe330984f6.jpg" alt="Rainbow Smoothie">
+                    </div>
+                    <div class="content">
+                        <div class="title">Rainbow Smoothie</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sit dolores at reiciendis quo quam!</div>
+                        <div class="price">Rs 350</div>
+                        <button class="add">Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="10">
+                    <div class="img">
+                        <img src="https://i.pinimg.com/564x/42/ae/4c/42ae4c17e14e4f75a620d69fdbc3bfab.jpg" alt="Strawberry Mango Smoothie">
+                    </div>
+                    <div class="content">
+                        <div class="title">Strawberry Mango Smoothie</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sit dolores at reiciendis quo quam!</div>
+                        <div class="price">Rs 350</div>
+                        <button class="add">Add to cart</button>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+
+        <div class="cart">
+            <div class="name" id="name"><i class="fa-solid fa-cart-shopping "></i>  CART 
+                <div class="total-items-in-cart">
+                    0
+                </div>
+            </div>
+            <div class="listCart">
+                <!-- RENDER CART ITEMS HERE! -->
+                <!-- <div class="item" data-key="1">
+                    <div class="img">
+                        <img src="https://i.pinimg.com/564x/e6/e1/1b/e6e11be3f09b73e4ea66e73e3988d5b5.jpg" alt="Lemonade">
+                    </div>
+                    <div class="content">
+                        <div class="title">Lemonade</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sit dolores at reiciendis quo quam!</div>
+                        <div class="price">Rs 25</div>
+                        <button class="remove" onclick="Remove(1)"><i class="fa-solid fa-trash-can"></i></button>
+                        <button class="btn minus">-</button>
+                        <button class="number">1</button>
+                        <button class="btn plus">+</button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="6">
+                    <div class="img">
+                        <img src="https://i.pinimg.com/564x/0e/e5/3d/0ee53de66d56b6eebcf46cf1112cca5e.jpg" alt="Fruit Beer">
+                    </div>
+                    <div class="content">
+                        <div class="title">Fruit Beer</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sit dolores at reiciendis quo quam!</div>
+                        <div class="price">Rs 250</div>
+                        <button class="remove" onclick="Remove(6)"><i class="fa-solid fa-trash-can"></i></button>
+                        <button class="btn minus">-</button>
+                        <button class="number">1</button>
+                        <button class="btn plus">+</button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="10">
+                    <div class="img">
+                        <img src="https://i.pinimg.com/564x/42/ae/4c/42ae4c17e14e4f75a620d69fdbc3bfab.jpg" alt="Strawberry Mango Smoothie">
+                    </div>
+                    <div class="content">
+                        <div class="title">Strawberry Mango Smoothie</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sit dolores at reiciendis quo quam!</div>
+                        <div class="price">Rs 350</div>
+                        <button class="remove" onclick="Remove(10)"><i class="fa-solid fa-trash-can"></i></button>
+                        <button class="btn minus">-</button>
+                        <button class="number">1</button>
+                        <button class="btn plus">+</button>
+                    </div>
+                </div> -->
+            </div>    
+
+            <div class="quote">
+                    <img src="glass.png" height="100px">
+                    <div class="p">Add Delicious Drinks to your Cart !</div>
+            </div>
+
+            <div class="cart-footer">
+                <div class="subtotal">
+                        Subtotal (0 items): ₹ 0
+                </div>
+                <div class="checkout" onClick="place()">
+                        Place Your Order
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        const porductsListEl = document.querySelector(".products-list");
+        seeMoreBtn.addEventListener('click', () => {
+            porductsListEl.scrollIntoView({behavior: "smooth"})
+        })
+    </script> -->
+
+    <script src="./product.js"></script>
+    <script src="./app.js"></script>
+    
+</body>
+</html>
